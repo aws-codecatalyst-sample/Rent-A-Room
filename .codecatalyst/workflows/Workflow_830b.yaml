@@ -51,8 +51,8 @@ Actions:
         # Use as prefix for the report files
         ReportNamePrefix: rpt
         IncludePaths:
-          - -coverage/**
-          - -reports/**
+          - coverage/**
+          - reports/**
     # Defines the action's properties.
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
