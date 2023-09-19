@@ -21,15 +21,15 @@ Actions:
       Artifacts:
         - Name: build
           Files:
-            - rent-a-room/**/*
+            - build/**/*
     # Defines the action's properties.
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
       Steps:
         - Run: npm install #install all dependencies from packagae.json
         - Run: npm run build #builds the app for production to the build folder
-        - Run: mkdir -p rent-a-room/build #making a new directory to hold all artifact files
-        - Run: mv build/* rent-a-room/build/ #moving our build folder into artifacts store directory
+        # - Run: mkdir -p rent-a-room/build #making a new directory to hold all artifact files
+        # - Run: mv build/* rent-a-room/build/ #moving our build folder into artifacts store directory
     Compute:
       Type: Lambda
   Test_90:
