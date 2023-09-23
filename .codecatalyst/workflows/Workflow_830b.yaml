@@ -9,7 +9,7 @@ Triggers:
 
 # Required - Define action configurations.
 Actions:
-  Build_54:
+  Build:
     # Identifies the action. Do not modify this value.
     Identifier: aws/build@v1.0.0
     # Specifies the source and/or artifacts to pass to the action as input.
@@ -34,7 +34,7 @@ Actions:
     Compute:
       Type: Lambda
       Fleet: Linux.x86-64.Large
-  Test_be:
+  Test:
     # Identifies the action. Do not modify this value.
     Identifier: aws/managed-test@v1.0.0
     # Specifies the source and/or artifacts to pass to the action as input.
@@ -85,5 +85,5 @@ Actions:
       Path: build
     #To only run this action if the build and test stage are successful
     DependsOn:
-      - Test_be
-      - Build_54
+      - Test
+      - Build
