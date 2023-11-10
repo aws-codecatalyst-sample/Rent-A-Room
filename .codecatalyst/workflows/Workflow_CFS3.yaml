@@ -79,7 +79,7 @@ Actions:
       Wait: true
       AWSRegion: us-east-2
       ExistingBucket: false
-      BucketName: CFS3CCActionProd1110-v1
+      BucketName: cfs3ccactionprod1110-v1
       Path: build
     #To only run this action if the build and test stage are successful
     DependsOn:
