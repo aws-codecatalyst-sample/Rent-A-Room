@@ -1,11 +1,9 @@
-Name: Workflow_830b
+Name: OnPushBuildTestDeployWebsite
 SchemaVersion: "1.0"
 
 # Optional - Set automatic triggers.
 Triggers:
-  - Type: PULLREQUEST
-    Events:
-      - CLOSED
+  - Type: PUSH
 
 # Required - Define action configurations.
 Actions:
